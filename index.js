@@ -124,6 +124,16 @@ const config = {
     'spaced-comment': ['error', 'always'],
     'switch-colon-spacing': 'error',
     'arrow-parens': ['error', 'always'],
+    'constructor-super': 'error', // eslint:recommended
+    'generator-star-spacing': ['error', 'after'],
+    'no-new-symbol': 'error', // eslint:recommended
+    'no-this-before-super': 'error', // eslint:recommended
+    'no-var': 'error',
+    'prefer-const': ['error', {destructuring: 'all'}],
+    'prefer-rest-params': 'error',
+    'prefer-spread': 'error',
+    'rest-spread-spacing': 'error',
+    'yield-star-spacing': ['error', 'after'],
   }
 };
 
