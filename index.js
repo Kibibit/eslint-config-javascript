@@ -60,6 +60,7 @@ const config = {
     'array-bracket-spacing': ['error', 'always'],
     'array-element-newline': 'off', // eslint:recommended
     'block-spacing': ['error', 'always'],
+    'brace-style': ['error', '1tbs', { 'allowSingleLine': true }]
   }
 };
 
