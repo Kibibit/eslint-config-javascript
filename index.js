@@ -1,8 +1,11 @@
-module.exports = {
+// @ts-check
+/**
+ * @type {import("eslint").Linter.Config}
+ */
+const config = {
   globals: {
       MyGlobal: true
   },
-
   rules: {
     'unused-imports/no-unused-imports': 'error',
     'simple-import-sort/imports': ['error', {
@@ -34,5 +37,30 @@ module.exports = {
     'max-len': [ 'error', { 'code': 80, "ignoreComments": true } ],
     'quotes': ["error", "single"],
     "semi": ["error"],
+    'no-irregular-whitespace': 'error', // eslint:recommended
+    'valid-jsdoc': ['error', {
+      requireParamDescription: false,
+      requireReturnDescription: false,
+      requireReturn: false,
+      prefer: {returns: 'return'},
+    }],
+    'curly': ['error', 'multi-line'],
+    'no-caller': 'error',
+    'no-extend-native': 'error',
+    'no-extra-bind': 'error',
+    'no-invalid-this': 'error',
+    'no-multi-spaces': 'error',
+    'no-multi-str': 'error',
+    'no-new-wrappers': 'error',
+    'no-throw-literal': 'error', // eslint:recommended
+    'no-with': 'error',
+    'prefer-promise-reject-errors': 'error',
+    'no-unused-vars': ['error', {args: 'none'}], // eslint:recommended
+    'array-bracket-newline': 'off', // eslint:recommended
+    'array-bracket-spacing': ['error', 'always'],
+    'array-element-newline': 'off', // eslint:recommended
+    'block-spacing': ['error', 'always'],
   }
 };
+
+module.exports = config;
